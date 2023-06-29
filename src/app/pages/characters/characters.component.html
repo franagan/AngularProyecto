@@ -1,0 +1,9 @@
+<h2>Movies List</h2>
+<ul class="list">
+  <li class="card" *ngFor="let item of characterList">
+    <p class="imgText">{{ item.title }}</p>
+    <a [routerLink]="[item._id]">
+      <img class="image" [src]="item.image" [alt]="item.title" />
+    </a>
+  </li>
+</ul>

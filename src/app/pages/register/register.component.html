@@ -1,0 +1,14 @@
+<h2>User Register</h2>
+<form class="form" (ngSubmit)="onSubmit()" #form="ngForm">
+  <label for="email">email</label>
+  <input type="text" name="email" id="email" [(ngModel)]="email" />
+  <label for="password">Password</label>
+  <input type="password" name="password" id="password" [(ngModel)]="password" />
+  <label for="name">name</label>
+  <input type="text" name="name" id="name" [(ngModel)]="name" />
+  <label for="lastname">lastname</label>
+  <input type="text" name="lastname" id="lastname" [(ngModel)]="lastname" />
+  <label for="phone">phone</label>
+  <input type="text" name="phone" id="phone" [(ngModel)]="phone" />
+  <button type="submit">Login</button>
+</form>

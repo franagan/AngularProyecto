@@ -1,0 +1,26 @@
+<h2>Contact Form</h2>
+<form class="form" action="process" method="post">
+  <mat-form-field>
+    <mat-label for="name">Name</mat-label>
+    <input matInput type="text" name="name" value="name" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label for="email">E-mail</mat-label>
+    <input matInput type="email" name="email" value="email" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Prioridad</mat-label>
+    <mat-select>
+      <mat-option value="normal">Normal</mat-option>
+      <mat-option value="urgente">Urgente</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Coments</mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+
+  <div class="button-row">
+    <button mat-raised-button color="primary">Enviar</button>
+  </div>
+</form>

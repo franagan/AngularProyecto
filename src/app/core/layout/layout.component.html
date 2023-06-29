@@ -1,0 +1,36 @@
+<nav class="nav">
+  <a
+    class="link-nav"
+    [routerLink]="['/home']"
+    routerLinkActive="router-link-active"
+    >Home</a
+  >
+  <a
+    class="link-nav"
+    [routerLink]="['/characters']"
+    routerLinkActive="router-link-active"
+    >Movies</a
+  >
+  <a
+    class="link-nav"
+    [routerLink]="['/register']"
+    routerLinkActive="router-link-active"
+    >Register</a
+  >
+  <a
+    *ngIf="!this.loginService.token"
+    class="link-nav"
+    [routerLink]="['/login']"
+    routerLinkActive="router-link-active"
+    >Login</a
+  >
+  <a class="link-nav" *ngIf="this.loginService.token" (click)="logout()">
+    Logout
+  </a>
+</nav>
+<main>
+  <p *ngIf="this.loginService.token">
+    Bienvenido {{ email }}, ya estas logado.
+  </p>
+  <router-outlet></router-outlet>
+</main>

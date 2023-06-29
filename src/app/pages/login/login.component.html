@@ -1,0 +1,27 @@
+<section *ngIf="!this.loginService.token">
+  <h2>Login Usuario</h2>
+  <form class="form" (ngSubmit)="onSubmit()" #form="ngForm">
+    <!-- <label for="name">name</label>
+  <input type="text" name="name" id="name" [(ngModel)]="name" /> -->
+    <label for="email">email</label>
+    <input type="text" name="email" id="email" [(ngModel)]="email" />
+    <label for="password">Password</label>
+    <input
+      type="password"
+      name="password"
+      id="password"
+      [(ngModel)]="password"
+    />
+    <button type="submit">Login</button>
+    <p *ngIf="this.loginService.token">
+      Bienvenido {{ email }}, ya estas logado.
+    </p>
+    <!-- <button
+    class="button-logout"
+    *ngIf="this.loginService.token"
+    (click)="logout()"
+  >
+    Logout
+  </button> -->
+  </form>
+</section>

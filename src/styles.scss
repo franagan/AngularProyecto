@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: rgb(220, 214, 214);
+}
+h1,
+h2 {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  width: auto;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

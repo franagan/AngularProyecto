@@ -1,0 +1,16 @@
+.nav a {
+  float: inline-start;
+  display: block;
+  color: #cb1d1d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav a:hover {
+  background-color: #dcd6d6;
+  color: black;
+}
+.nav .icon {
+  display: none;
+}

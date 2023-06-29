@@ -1,0 +1,22 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 30px;
+  padding: auto;
+}
+
+.image {
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+.imgText {
+  text-align: center;
+  font-size: 20px;
+}
+
+.card {
+  max-width: 400px;
+}
