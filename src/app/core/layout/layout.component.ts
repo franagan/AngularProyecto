@@ -11,10 +11,12 @@ export class LayoutComponent implements OnInit {
   email: string='';
   password: string='';
   login: any;
+
  constructor(public loginService: LoginService){}
  ngOnInit(): void {
   this.loginService;
  }
+
  public logout(){
   console.log('click');
   this.loginService.logoutapi()

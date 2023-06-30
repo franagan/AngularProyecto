@@ -1,3 +1,9 @@
-<app-header></app-header>
-<app-layout></app-layout>
-<app-footer></app-footer>
+<div [className]="backColor">
+  <div>
+    <button (click)="changeColor()">cambio color</button>
+  </div>
+
+  <app-header> </app-header>
+  <app-layout></app-layout>
+  <app-footer></app-footer>
+</div>

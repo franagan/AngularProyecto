@@ -12,6 +12,8 @@ import { CharacterInterface} from 'src/app/models/character.model';
 export class CharactersComponent {
   characterList: CharacterInterface[] = [];
   filter: string= '';
+  searchTerm: string='';
+
   constructor(private characterService: CharacterService){ }
 
   ngOnInit(){

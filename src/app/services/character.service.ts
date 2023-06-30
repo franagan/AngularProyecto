@@ -28,7 +28,7 @@ getCharacters(): Observable<any> {
 
   // .pipe(
   //   map(response => {
-  //     const characterList: CharacterInterface[] = response.da.map((item: any)=> {
+  //     const characterList: CharacterInterface[] = response.data.map((item: any)=> {
   //       const character: CharacterInterface = {
   //         id: item.id,
   //         title: item.title,

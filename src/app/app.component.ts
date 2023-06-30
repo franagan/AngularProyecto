@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'testProyect';
+  backColor: string ='';
+  dark: string = 'dark'
+
+  changeColor(){
+    console.log('change');
+    this.backColor = this.backColor==='' ?this.dark:'';
+  }
 }

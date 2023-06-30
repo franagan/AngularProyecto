@@ -1,7 +1,11 @@
-<section>
-  <h2>{{ characterItem.title }}</h2>
-  <p>{{ characterItem.director }}</p>
+<section class="movie-card">
+  <h2 class="card-title">{{ characterItem.title }}</h2>
+  <p class="">{{ characterItem.director }}</p>
   <p>{{ characterItem.year }}</p>
   <p>{{ characterItem.genre }}</p>
-  <img [src]="characterItem.image" [alt]="characterItem.title" />
+  <img
+    class="movie-img"
+    [src]="characterItem.image"
+    [alt]="characterItem.title"
+  />
 </section>

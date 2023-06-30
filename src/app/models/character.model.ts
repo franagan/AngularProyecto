@@ -7,3 +7,6 @@ export interface CharacterInterface {
   genre: string;
 }
 
+// export interface ResponseInterface {
+//   data: string[];
+// }

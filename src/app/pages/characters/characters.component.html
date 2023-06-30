@@ -1,6 +1,10 @@
 <h2>Movies List</h2>
+<div class="filter">
+  <input type="text" [(ngModel)]="searchTerm" placeholder="Buscar" />
+</div>
+
 <ul class="list">
-  <li class="card" *ngFor="let item of characterList">
+  <li class="card" *ngFor="let item of characterList | filter : searchTerm">
     <p class="imgText">{{ item.title }}</p>
     <a [routerLink]="[item._id]">
       <img class="image" [src]="item.image" [alt]="item.title" />
